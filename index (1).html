@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>SENRIKX — Empieza tu viaje como revendedor hoy</title>
+<meta name="description" content="Acceso al mejor proveedor premium de China. Marcas, ropa, calzado, perfumes, relojes y más. Pago único 37,95 €." />
+<meta property="og:title" content="SENRIKX — Empieza tu viaje como revendedor hoy" />
+<meta property="og:description" content="Acceso premium al proveedor #1 de China. Pago único 37,95 €." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08080d; --bg-2:#0d0d14; --card:#11111a; --card-2:#15151f;
+  --fg:#fafafa; --muted:#9a9aa8; --border:rgba(255,255,255,.08);
+  --primary:#7c3aed; --primary-2:#3b82f6; --accent:#22d3ee;
+  --grad:linear-gradient(135deg,#7c3aed,#3b82f6 55%,#22d3ee);
+  --glow:0 10px 60px -10px rgba(124,58,237,.55);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+body{background-image:radial-gradient(ellipse at top,rgba(124,58,237,.18),transparent 60%),radial-gradient(ellipse at bottom right,rgba(34,211,238,.10),transparent 60%);background-attachment:fixed;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+.display{font-family:'Anton',Impact,sans-serif;letter-spacing:.01em;line-height:.95;text-transform:uppercase}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:14px 26px;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;border:0;transition:transform .2s,box-shadow .2s;text-decoration:none}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:var(--glow)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 70px -8px rgba(124,58,237,.7)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid var(--border)}
+.btn-ghost:hover{background:rgba(255,255,255,.04)}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--border);font-size:12px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 12px #22c55e;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* NAV */
+header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(8,8,13,.7);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{font-family:'Anton',sans-serif;font-size:24px;letter-spacing:.08em}
+.logo span{color:var(--accent)}
+.nav-links{display:none;gap:28px;color:var(--muted);font-size:14px}
+.nav-links a:hover{color:#fff}
+@media(min-width:768px){.nav-links{display:flex}}
+
+/* HERO */
+.hero{padding:80px 0 60px;text-align:center;position:relative}
+.hero h1{font-size:clamp(44px,9vw,108px);margin:18px 0 22px}
+.hero p.sub{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:640px;margin:0 auto 32px;line-height:1.55}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.live-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.stat{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.stat b{color:#fff;font-weight:700}
+
+/* MARQUEE */
+.marquee-wrap{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;margin:40px 0;background:rgba(255,255,255,.02)}
+.marquee{display:flex;gap:60px;white-space:nowrap;animation:marquee 35s linear infinite;font-family:'Anton',sans-serif;font-size:22px;color:rgba(255,255,255,.4);letter-spacing:.1em}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTION */
+section{padding:70px 0}
+.section-head{text-align:center;margin-bottom:50px}
+.section-head .eyebrow{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+.section-head h2{font-size:clamp(34px,5vw,56px);margin:0 0 14px}
+.section-head p{color:var(--muted);max-width:580px;margin:0 auto;font-size:16px;line-height:1.6}
+
+/* PRODUCT CARD */
+.product{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:32px;box-shadow:0 30px 80px -30px rgba(0,0,0,.6);position:relative;overflow:hidden}
+.product::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 0% 0%,rgba(124,58,237,.15),transparent 50%);pointer-events:none}
+.product-grid{display:grid;gap:32px;grid-template-columns:1fr;position:relative}
+@media(min-width:900px){.product-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:520px){.cat-grid{grid-template-columns:repeat(3,1fr)}}
+.cat{aspect-ratio:1/1;border-radius:14px;background:var(--card-2);border:1px solid var(--border);overflow:hidden;position:relative;transition:transform .3s}
+.cat:hover{transform:translateY(-4px) scale(1.02)}
+.cat .ico{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:42px;background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(34,211,238,.1))}
+.cat .lbl{position:absolute;bottom:8px;left:10px;font-size:11px;font-weight:600;color:#fff;text-transform:uppercase;letter-spacing:.08em;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.feature{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--border)}
+.feature:last-of-type{border:0}
+.feature .check{width:24px;height:24px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;color:#fff;font-weight:800}
+.feature .txt b{display:block;font-size:15px;margin-bottom:2px}
+.feature .txt span{color:var(--muted);font-size:13px}
+.price-block{margin-top:24px;padding:22px;background:var(--card-2);border:1px solid var(--border);border-radius:16px}
+.price-row{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.price{font-family:'Anton',sans-serif;font-size:54px;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.price-old{color:var(--muted);text-decoration:line-through;font-size:18px}
+.price-disc{background:#22c55e;color:#000;font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px}
+.price-note{color:var(--muted);font-size:13px;margin-top:6px}
+.trust{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:12px}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:700px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.testi-grid{grid-template-columns:repeat(3,1fr)}}
+.testi{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px;transition:transform .25s,border-color .25s}
+.testi:hover{transform:translateY(-4px);border-color:rgba(124,58,237,.4)}
+.stars{color:#fbbf24;margin-bottom:10px;font-size:14px}
+.testi p{margin:0 0 16px;color:#e6e6ec;font-size:14px;line-height:1.55}
+.who{display:flex;align-items:center;gap:12px}
+.av{width:38px;height:38px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff}
+.who b{display:block;font-size:13px}
+.who span{color:var(--muted);font-size:12px}
+
+/* FAQ */
+.faq{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+details{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 22px;transition:border-color .2s}
+details[open]{border-color:rgba(124,58,237,.4)}
+summary{cursor:pointer;font-weight:600;display:flex;justify-content:space-between;align-items:center;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;color:var(--muted);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin:14px 0 0;line-height:1.6;font-size:14px}
+
+/* CTA FOOTER */
+.cta-final{text-align:center;padding:80px 20px;background:linear-gradient(180deg,transparent,rgba(124,58,237,.08));border-top:1px solid var(--border)}
+.cta-final h2{font-size:clamp(34px,6vw,64px);margin:0 0 18px}
+.cta-final p{color:var(--muted);margin:0 auto 30px;max-width:500px}
+
+footer{padding:40px 20px 110px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--border)}
+@media(min-width:768px){footer{padding-bottom:40px}}
+
+/* MOBILE STICKY BUY */
+.mobile-buy{position:fixed;bottom:0;left:0;right:0;background:rgba(8,8,13,.95);backdrop-filter:blur(14px);border-top:1px solid var(--border);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:40}
+.mobile-buy .p{font-family:'Anton',sans-serif;font-size:24px}
+.mobile-buy .o{color:var(--muted);text-decoration:line-through;font-size:14px;margin-left:6px}
+@media(min-width:768px){.mobile-buy{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="logo">SENRI<span>KX</span></div>
+    <nav class="nav-links">
+      <a href="#proveedor">Proveedor</a>
+      <a href="#valoraciones">Valoraciones</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#comprar" class="btn btn-primary" style="padding:10px 18px;font-size:13px">Comprar</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <span class="badge"><span class="dot"></span> <b id="liveCount" style="color:#fff">62</b>&nbsp;personas viendo ahora</span>
+    <h1 class="display">Empieza tu viaje como <span class="grad">revendedor</span> hoy</h1>
+    <p class="sub">Acceso directo al proveedor premium #1 de China. Marcas top, calidad 1:1 y envíos a toda Europa. Sin intermediarios.</p>
+    <div class="hero-cta">
+      <a href="#comprar" class="btn btn-primary">Conseguir acceso — 37,95 €</a>
+      <a href="#proveedor" class="btn btn-ghost">Ver detalles</a>
+    </div>
+    <div class="live-row">
+      <span class="stat">⭐ <b>4,9/5</b> · 2.847 valoraciones</span>
+      <span class="stat">⚡ Acceso inmediato</span>
+      <span class="stat">🔒 Pago seguro vía Stripe</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee">
+    <span>NIKE</span><span>•</span><span>LOUIS VUITTON</span><span>•</span><span>GUCCI</span><span>•</span><span>ROLEX</span><span>•</span><span>BALENCIAGA</span><span>•</span><span>DIOR</span><span>•</span><span>PRADA</span><span>•</span><span>OFF-WHITE</span><span>•</span><span>STONE ISLAND</span><span>•</span><span>YEEZY</span><span>•</span><span>HERMÈS</span><span>•</span><span>CHANEL</span><span>•</span>
+    <span>NIKE</span><span>•</span><span>LOUIS VUITTON</span><span>•</span><span>GUCCI</span><span>•</span><span>ROLEX</span><span>•</span><span>BALENCIAGA</span><span>•</span><span>DIOR</span><span>•</span><span>PRADA</span><span>•</span><span>OFF-WHITE</span><span>•</span><span>STONE ISLAND</span><span>•</span><span>YEEZY</span><span>•</span><span>HERMÈS</span><span>•</span><span>CHANEL</span><span>•</span>
+  </div>
+</div>
+
+<!-- PRODUCTO -->
+<section id="proveedor">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">SENRIKX PREMIUM</div>
+      <h2 class="display">El <span class="grad">único</span> proveedor que necesitas</h2>
+      <p>Un proveedor verificado con todo el catálogo del mercado: ropa, calzado, perfumes, relojes, accesorios y mucho más.</p>
+    </div>
+
+    <div class="product" id="comprar">
+      <div class="product-grid">
+        <div>
+          <div class="cat-grid">
+            <div class="cat"><div class="ico">👟</div><div class="lbl">Sneakers</div></div>
+            <div class="cat"><div class="ico">👕</div><div class="lbl">Ropa</div></div>
+            <div class="cat"><div class="ico">🧴</div><div class="lbl">Perfumes</div></div>
+            <div class="cat"><div class="ico">🎧</div><div class="lbl">Auriculares</div></div>
+            <div class="cat"><div class="ico">⌚</div><div class="lbl">Relojes</div></div>
+            <div class="cat"><div class="ico">👜</div><div class="lbl">Bolsos</div></div>
+            <div class="cat"><div class="ico">🕶️</div><div class="lbl">Gafas</div></div>
+            <div class="cat"><div class="ico">📦</div><div class="lbl">Envíos</div></div>
+            <div class="cat"><div class="ico">💎</div><div class="lbl">Joyas</div></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size:28px;margin:0 0 8px" class="display">Acceso PREMIUM</h3>
+          <p style="color:var(--muted);margin:0 0 18px;font-size:14px">Contacto directo + catálogo completo + soporte privado.</p>
+
+          <div class="feature"><div class="check">✓</div><div class="txt"><b>Contacto directo del proveedor</b><span>WhatsApp verificado, respuesta en minutos.</span></div></div>
+          <div class="feature"><div class="check">✓</div><div class="txt"><b>Catálogo completo</b><span>Más de 50.000 referencias actualizadas a diario.</span></div></div>
+          <div class="feature"><div class="check">✓</div><div class="txt"><b>Calidad 1:1 garantizada</b><span>Solo el tier más alto del mercado.</span></div></div>
+          <div class="feature"><div class="check">✓</div><div class="txt"><b>Envío seguro a Europa</b><span>Tracking incluido. Reposición en caso de incidencia.</span></div></div>
+
+          <div class="price-block">
+            <div class="price-row">
+              <div class="price">37,95€</div>
+              <div class="price-old">79,95€</div>
+              <div class="price-disc">-52%</div>
+            </div>
+            <div class="price-note">Pago único · Acceso de por vida · Sin suscripciones</div>
+            <a href="#" id="buyBtn" class="btn btn-primary" style="width:100%;margin-top:16px">Comprar ahora — 37,95 €</a>
+            <div class="trust">
+              <span>🔒 Pago seguro Stripe</span>
+              <span>⚡ Acceso inmediato por email</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="valoraciones">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">VALORACIONES REALES</div>
+      <h2 class="display">Lo que dicen <span class="grad">nuestros clientes</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Recibí el contacto en menos de 2 minutos. Pedí unas Jordan y llegaron en 9 días impecables. El proveedor responde rapidísimo."</p>
+        <div class="who"><div class="av">IO</div><div><b>Iker Otxoa</b><span>Bilbao</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Llevaba meses buscando un proveedor serio. SENRIKX es de lo mejor que he probado, calidad real 1:1 y los envíos llegan perfectos."</p>
+        <div class="who"><div class="av">NS</div><div><b>Naia Sasiain</b><span>San Sebastián</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Por 37 € tienes el contacto que la gente cobra a 200. He revendido ya 14 pares y he recuperado la inversión x20."</p>
+        <div class="who"><div class="av">EM</div><div><b>Eneko Mendiola</b><span>Pamplona</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Probé otros 'proveedores' antes y fue tirar el dinero. Aquí el catálogo es enorme y la calidad nada que ver."</p>
+        <div class="who"><div class="av">AR</div><div><b>Aimar Renteria</b><span>Vitoria</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"Las gafas Cartier que pedí me las dieron por originales en una tienda. Increíble. Recomiendo 100%."</p>
+        <div class="who"><div class="av">UB</div><div><b>Uxue Belasko</b><span>Logroño</span></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>"El soporte es lo que marca la diferencia. Te asesoran con tallas, modelos y fotos reales antes de pagar nada."</p>
+        <div class="who"><div class="av">JG</div><div><b>Jokin Garaikoetxea</b><span>Madrid</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">PREGUNTAS FRECUENTES</div>
+      <h2 class="display">Todo lo que <span class="grad">necesitas saber</span></h2>
+    </div>
+    <div class="faq">
+      <details open><summary>¿Qué recibo exactamente?</summary><p>Recibirás un correo electrónico en menos de 5 minutos con el contacto directo del proveedor premium y las instrucciones para empezar a pedir.</p></details>
+      <details><summary>¿El pago es seguro?</summary><p>Sí. Todos los pagos se procesan a través de Stripe con cifrado SSL. Nosotros no almacenamos ningún dato de tu tarjeta.</p></details>
+      <details><summary>¿Cuánto tarda en llegar mi pedido al proveedor?</summary><p>Los envíos a Europa suelen tardar entre 7 y 14 días con tracking incluido.</p></details>
+      <details><summary>¿Hay pagos recurrentes?</summary><p>No. Es un pago único de 37,95 € y el acceso es de por vida.</p></details>
+      <details><summary>¿Para quién es este servicio?</summary><p>Para revendedores, coleccionistas y particulares que buscan acceso directo al mejor proveedor sin intermediarios ni comisiones extra.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <h2 class="display">Tu acceso a un <span class="grad">solo clic</span></h2>
+    <p>Únete a miles de revendedores que ya están facturando con SENRIKX.</p>
+    <a href="#comprar" class="btn btn-primary" onclick="document.getElementById('buyBtn').click();return false;">Comprar ahora — 37,95 €</a>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 SENRIKX · Todos los derechos reservados</div>
+  <div style="margin-top:8px;font-size:12px">Producto digital de acceso inmediato · Sin devoluciones una vez entregado el contacto</div>
+</footer>
+
+<div class="mobile-buy">
+  <div>
+    <div class="p">37,95€<span class="o">79,95€</span></div>
+    <div style="font-size:11px;color:var(--muted)">Acceso de por vida</div>
+  </div>
+  <a href="#" class="btn btn-primary" onclick="document.getElementById('buyBtn').click();return false;" style="padding:12px 20px">Comprar</a>
+</div>
+
+<script>
+// Live viewers counter
+(function(){
+  var el=document.getElementById('liveCount');
+  var n=62;
+  setInterval(function(){
+    n+=Math.floor(Math.random()*5)-2;
+    if(n<48)n=48;if(n>89)n=89;
+    el.textContent=n;
+  },2800);
+})();
+
+// === STRIPE PAYMENT LINK ===
+// 1) Entra en https://dashboard.stripe.com/payment-links
+// 2) Crea un Payment Link con producto "SENRIKX Premium" a 37,95 €
+// 3) Activa "Recopilar email del cliente" y configura el "Email de recibo personalizado"
+//    pegando el HTML del archivo email.html (Stripe lo enviará al pagar)
+// 4) Sustituye la URL de abajo por la tuya:
+var STRIPE_PAYMENT_LINK = "https://buy.stripe.com/TU_PAYMENT_LINK_AQUI";
+
+document.getElementById('buyBtn').addEventListener('click', function(e){
+  e.preventDefault();
+  if(STRIPE_PAYMENT_LINK.indexOf('TU_PAYMENT_LINK') !== -1){
+    alert('⚠️ Configura tu Stripe Payment Link en el código (busca STRIPE_PAYMENT_LINK).');
+    return;
+  }
+  window.location.href = STRIPE_PAYMENT_LINK;
+});
+</script>
+
+</body>
+</html>
